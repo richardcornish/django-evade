@@ -7,7 +7,7 @@ Install with the `pip <https://pip.pypa.io/en/stable/>`_ package manager.
 
 .. code-block:: bash
 
-   $ mkvirtualenv myvenv -p /usr/local/bin/python3
+   $ mkvirtualenv myvenv -p python3
    $ pip install django
    $ pip install django-evade
 
