@@ -12,7 +12,7 @@ Django Evade
 Install
 =======
 
-Install it with the `pip`<https://pip.pypa.io/en/stable/>_ package manager.
+Install it with the `pip <https://pip.pypa.io/en/stable/>`_ package manager.
 
 .. code-block:: bash
 
