@@ -1,6 +1,6 @@
 import os
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 setup(
@@ -14,10 +14,7 @@ setup(
     license='BSD License',
     zip_safe=False,
     include_package_data=True,
-    packages=[
-        'evade',
-        'evade.tests'
-    ],
+    packages=find_packages(),
     test_suite='evade.tests',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
