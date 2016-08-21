@@ -15,11 +15,13 @@ Install
 Install it with the `pip<https://pip.pypa.io/en/stable/>`_ package manager.
 
 .. code-block:: bash
+
    pip install -e git+https://github.com/richardcornish/django-evade.git#egg=django-evade
 
 Remember to update your ``requirements.txt`` file. In your project directory:
 
 .. code-block:: bash
+
    pip freeze > requirements.txt
 
 Usage
@@ -28,6 +30,7 @@ Usage
 Load the template tag in your template. Run it on a variable:
 
 .. code-block:: html
+
    {% load evade_tags %}
 
    {{ "me@example.com"|evade }}
