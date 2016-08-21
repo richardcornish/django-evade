@@ -19,6 +19,7 @@ It's just like |escape|_, but forces every character to be escaped randomly into
 
 "Evade" sounded like a more severe form of "escape."
 
+* `Package distribution <https://pypi.python.org/pypi/django-evade>`_
 * `Code repository <https://github.com/richardcornish/django-evade>`_
 * `Documentation <https://django-evade.readthedocs.io/>`_
 * `Tests <https://travis-ci.org/richardcornish/django-evade>`_
