@@ -25,7 +25,7 @@ Install
 
 .. code-block:: bash
 
-   $ pip install -e git+https://github.com/richardcornish/django-evade.git#egg=django-evade
+   $ pip install django-evade
 
 Add to ``settings.py``.
 
