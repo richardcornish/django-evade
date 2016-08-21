@@ -21,7 +21,7 @@ It's just like |escape|_, but forces every character to be escaped randomly into
 
 * `Code repository <https://github.com/richardcornish/django-evade>`_
 * `Documentation <https://django-evade.readthedocs.io/>`_
-* `Continuous integration tests <https://travis-ci.org/richardcornish/django-evade>`_
+* `Tests <https://travis-ci.org/richardcornish/django-evade>`_
 
 Install
 =======
