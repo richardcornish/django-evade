@@ -28,4 +28,4 @@ Usage
 Documentation
 =============
 
-`Full documentation <http://django-evade.readthedocs.io/en/latest/>`_ is available.
+`Full documentation <https://django-evade.readthedocs.io/>`_ is available.
