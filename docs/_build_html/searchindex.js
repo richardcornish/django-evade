@@ -1,1 +1,0 @@
-Search.setIndex({envversion:49,filenames:["index"],objects:{"":{evade:[0,0,0,"-"]}},objnames:{"0":["py","module","Python module"]},objtypes:{"0":"py:module"},terms:{content:0,index:0,modul:0,page:0,search:0},titles:["Django Evade"],titleterms:{django:0,document:[],evad:[],evade:0,indice:0,overview:0,tabl:0,welcom:[]}})
