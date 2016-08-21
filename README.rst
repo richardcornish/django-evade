@@ -1,5 +1,5 @@
 Django Evade
-============
+************
 
 |Build status|_
 
