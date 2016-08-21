@@ -12,10 +12,12 @@ Django Evade
 Install
 =======
 
-Install it with the `pip<https://pip.pypa.io/en/stable/>`_ package manager.
+Install it with the `pip`<https://pip.pypa.io/en/stable/>_ package manager.
 
 .. code-block:: bash
 
+   mkvirtualenv myvenv -p /usr/local/bin/python3
+   pip install django
    pip install -e git+https://github.com/richardcornish/django-evade.git#egg=django-evade
 
 Remember to update your ``requirements.txt`` file. In your project directory:
