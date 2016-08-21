@@ -26,7 +26,7 @@ Install `Sphinx <http://www.sphinx-doc.org/>`_, |sphinx-autobuild|_, and |sphinx
 .. |sphinx_rtd_theme| replace:: ``sphinx_rtd_theme``
 .. _sphinx_rtd_theme: https://pypi.python.org/pypi/sphinx_rtd_theme
 
-.. code-block:: python
+.. code-block:: bash
 
    $ pip install sphinx sphinx-autobuild sphinx_rtd_theme
 
