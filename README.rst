@@ -29,3 +29,8 @@ Documentation
 =============
 
 `Full documentation <https://django-evade.readthedocs.io/>`_ is available.
+
+Tests
+=====
+
+`Continuous integration test results <https://travis-ci.org/richardcornish/django-evade>`_ are available.
