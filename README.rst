@@ -1,10 +1,14 @@
 Django Evade
 ************
 
-|Build status|_
+|PyPI version|_ |Build status|_
+
+.. |PyPI version| image::
+   https://badge.fury.io/py/django-evade.svg
+.. _PyPI version: https://pypi.python.org/pypi/django-evade
 
 .. |Build status| image::
-   https://api.travis-ci.org/richardcornish/django-evade.svg
+   https://travis-ci.org/richardcornish/django-evade.svg?branch=master
 .. _Build status: https://travis-ci.org/richardcornish/django-evade
 
 **Django Evade** is a `Django template filter <https://docs.djangoproject.com/en/1.10/howto/custom-template-tags/>`_ application for numerically escaping characters in templates.
