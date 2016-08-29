@@ -1,6 +1,7 @@
 from __future__ import unicode_literals
 
 import random
+
 from django import template
 from django.utils.encoding import force_text
 
