@@ -1,3 +1,5 @@
+from __future__ import unicode_literals
+
 import os
 
 from setuptools import find_packages, setup
