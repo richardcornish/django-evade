@@ -5,7 +5,7 @@ Usage
 
 Load the template tag in a template. Run the filter on a variable.
 
-.. code-block:: html
+.. code-block:: django
 
    {% extends "base.html" %}
 

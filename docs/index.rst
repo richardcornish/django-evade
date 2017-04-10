@@ -47,7 +47,7 @@ Add to ``settings.py``.
 Usage
 =====
 
-.. code-block:: html
+.. code-block:: django
 
    {% load evade_tags %}
 
