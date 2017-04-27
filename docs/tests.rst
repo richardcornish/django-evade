@@ -10,7 +10,7 @@ However, you can also test the source code.
 .. code-block:: bash
 
    $ workon myvenv
-   $ django-admin.py test evade.tests --settings="evade.tests.settings"
+   $ django-admin test evade.tests --settings="evade.tests.settings"
    
    Creating test database for alias 'default'...
    ..........

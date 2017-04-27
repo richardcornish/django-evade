@@ -30,4 +30,4 @@ install:
     - pip install -q Django==$DJANGO_VERSION
     - python setup.py -q install
 script:
-    - django-admin.py test evade.tests
+    - django-admin test evade.tests
