@@ -7,7 +7,7 @@ from setuptools import find_packages, setup
 
 setup(
     name='django-evade',
-    version='0.1.2',
+    version='0.1.3',
     description='A Django template filter application for numerically escaping characters in templates',
     long_description=open(os.path.join(os.path.dirname(__file__), 'README.rst')).read(),
     author='Richard Cornish',
