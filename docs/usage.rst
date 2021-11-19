@@ -3,7 +3,10 @@
 Usage
 *****
 
-Load the template tag in a template. Run the filter on a variable.
+HTML
+====
+
+Load the template tag in a template. Run the filter on a literal or a variable.
 
 .. code-block:: django
 
@@ -19,8 +22,25 @@ Load the template tag in a template. Run the filter on a variable.
 
        <p><a href="mailto:{{ "me@example.com"|evade }}">{{ "me@example.com"|evade }}</a></p>
 
+       <p>
        {% filter evade %}
-       <p><a href="mailto:me@example.com">me@example.com</a></p>
+       {{ "me@example.com"|evade }}
        {% endfilter %}
+       </p>
 
    {% endblock %}
+
+Python
+======
+
+Can also be imported as a standalone Python module:
+
+.. code-block:: python
+
+   >>> from evade import evade
+   >>> evade("©")
+   '&copy;'
+   >>> evade("©")
+   '&#169;'
+   >>> evade("©")
+   '&#x0a9;'

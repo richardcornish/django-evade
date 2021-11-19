@@ -5,25 +5,23 @@ Django Evade
 
 .. |PyPI version| image::
    https://badge.fury.io/py/django-evade.svg
-.. _PyPI version: https://pypi.python.org/pypi/django-evade
+.. _PyPI version: https://pypi.org/project/django-evade/
 
 .. |Build status| image::
-   https://travis-ci.org/richardcornish/django-evade.svg?branch=master
-.. _Build status: https://travis-ci.org/richardcornish/django-evade
+   https://api.travis-ci.com/richardcornish/django-evade.svg?branch=main
+.. _Build status: https://app.travis-ci.com/github/richardcornish/django-evade
 
-**Django Evade** is a `Django <https://www.djangoproject.com/>`_ `template filter <https://docs.djangoproject.com/en/1.11/howto/custom-template-tags/>`_ application for numerically escaping characters in templates.
+**Django Evade** is a `Django <https://www.djangoproject.com/>`_ `template filter <https://docs.djangoproject.com/en/dev/howto/custom-template-tags/>`_ application to pseudo-randomly convert literal HTML characters into equivalent `named <https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references>`_, `numeric, or hexadecimal <https://en.wikipedia.org/wiki/Numeric_character_reference>`_ HTML character entity references.
 
-It's just like |escape|_, but forces every character to be escaped randomly into either a `decimal or hexadecimal numeric character reference <https://en.wikipedia.org/wiki/Numeric_character_reference>`_ by using a combination of `Unicode conversion <https://docs.python.org/3/library/functions.html#ord>`_ and `string formatting <https://docs.python.org/3/library/string.html#format-specification-mini-language>`_. Useful for obscuring ``mailto`` hyperlinks to prevent spammers from collecting email addresses. Inspired by a `Django snippet <https://djangosnippets.org/snippets/216/>`_.
+Useful for obscuring ``mailto`` hyperlinks to prevent spammers from collecting e-mail addresses. Inspired by a `Django snippet <https://djangosnippets.org/snippets/216/>`_, but rewritten to use the `Format Specification Mini-Language <https://docs.python.org/3/library/string.html#formatspec>`_. The result is a more severe form of |escape|_, leading to the name "evade."
 
 .. |escape| replace:: ``escape``
-.. _escape: https://docs.djangoproject.com/en/1.11/ref/templates/builtins/#escape
+.. _escape: https://docs.djangoproject.com/en/dev/ref/templates/builtins/#escape
 
-"Evade" sounded like a more severe form of "escape."
-
-* `Package distribution <https://pypi.python.org/pypi/django-evade>`_
-* `Code repository <https://github.com/richardcornish/django-evade>`_
+* `Package <https://pypi.org/project/django-evade/>`_
+* `Source <https://github.com/richardcornish/django-evade>`_
 * `Documentation <https://django-evade.readthedocs.io/>`_
-* `Tests <https://travis-ci.org/richardcornish/django-evade>`_
+* `Tests <https://app.travis-ci.com/github/richardcornish/django-evade>`_
 
 Install
 =======
@@ -38,13 +36,13 @@ Add to ``settings.py``.
 
    INSTALLED_APPS = [
        # ...
-       'evade',
+       "evade",
    ]
 
 Usage
 =====
 
-.. code-block:: html
+.. code-block:: django
 
    {% load evade_tags %}
 
@@ -54,4 +52,18 @@ One possible result:
 
 .. code-block:: html
 
-   &#x6d;&#101;&#64;&#x65;&#120;&#x61;&#109;&#x70;&#108;&#101;&#x2e;&#x63;&#111;&#109;
+   &#x006D;&#x065;&commat;&#x65;&#x78;&#x61;&#x6d;&#112;&#x6C;&#x65;&period;&#x63;&#111;&#x6D;
+
+Note the use of named (``&commat;``), decimal (``&#112;``), hexadecimal lowercase (``&#x6d;``), and hexadecimal uppercase (``&#x6C;``) forms, and the varying length of zero fills (``&#x006D;``, ``&#x065;``). Each character entity reference is pseudo-randomized.
+
+Can also be imported as a standalone Python module:
+
+.. code-block:: python
+
+   >>> from evade import evade
+   >>> evade("©")
+   '&copy;'
+   >>> evade("©")
+   '&#169;'
+   >>> evade("©")
+   '&#x0a9;'

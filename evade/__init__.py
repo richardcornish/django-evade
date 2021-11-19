@@ -1,1 +1,1 @@
-from __future__ import unicode_literals
+from evade.utils.evade import evade

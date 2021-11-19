@@ -1,29 +1,21 @@
-from __future__ import unicode_literals
-
-import random
-
 from django import template
-from django.utils.encoding import force_text
+from django.template.defaultfilters import stringfilter
+from django.utils.safestring import mark_safe
+
+from ..utils.evade import evade
 
 register = template.Library()
 
 
-@register.filter(is_safe=True)
-def evade(value):
+@register.filter(name="evade", is_safe=True)
+@stringfilter
+def evade_filter(value):
     """
-    Escape string value as a numeric character reference,
-    randomly either in decimal or hexadecimal form
+    Escape string value to a pseudo-random HTML character reference, into one
+    of named, decimal, or hexadecimal forms
 
     Example:
     {% load evade_tags %}
     {{ "me@example.com"|evade }}
     """
-    string = ""
-    for letter in value:
-        integer = random.randint(0, 1)
-        if integer == 0:
-            entity = "&#%d;" % ord(letter)
-        else:
-            entity = "&#x%x;" % ord(letter)
-        string += entity
-    return force_text(string)
+    return mark_safe(evade(value))

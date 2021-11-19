@@ -3,19 +3,19 @@
 Tests
 *****
 
-`Continuous integration test results <https://travis-ci.org/richardcornish/django-evade>`_ are available online.
+`Continuous integration test results <https://app.travis-ci.com/github/richardcornish/django-evade>`_ are available online.
 
 However, you can also test the source code.
 
 .. code-block:: bash
 
-   $ workon myvenv
-   $ django-admin test evade.tests --settings="evade.tests.settings"
-   
+   $ source myvenv/bin/activate
+   (myvenv)$ django-admin test evade.tests --settings="evade.tests.settings"
    Creating test database for alias 'default'...
-   ..........
+   System check identified no issues (0 silenced).
+   ...........
    ----------------------------------------------------------------------
-   Ran 10 tests in 0.260s
+   Ran 11 tests in 0.020s
    
    OK
    Destroying test database for alias 'default'...
