@@ -8,8 +8,8 @@ Django Evade
 .. _PyPI version: https://pypi.org/project/django-evade/
 
 .. |Build status| image::
-   https://api.travis-ci.com/richardcornish/django-evade.svg?branch=main
-.. _Build status: https://app.travis-ci.com/github/richardcornish/django-evade
+   https://github.com/richardcornish/django-evade/actions/workflows/main.yml/badge.svg
+.. _Build status: https://github.com/richardcornish/django-evade/actions/workflows/main.yml
 
 **Django Evade** is a `Django <https://www.djangoproject.com/>`_ `template filter <https://docs.djangoproject.com/en/dev/howto/custom-template-tags/>`_ application to pseudo-randomly convert literal HTML characters into equivalent `named <https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references>`_, `numeric, or hexadecimal <https://en.wikipedia.org/wiki/Numeric_character_reference>`_ HTML character entity references.
 

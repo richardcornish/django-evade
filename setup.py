@@ -15,10 +15,9 @@ setup(
     author_email="rich@richardcornish.com",
     url="https://github.com/richardcornish/django-evade",
     license="BSD",
-    packages=find_packages(exclude=("tests",)),
+    packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
-    test_suite="evade.tests",
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Environment :: Web Environment",
@@ -37,5 +36,9 @@ setup(
         "Programming Language :: Python :: 3.9",
         "Topic :: Internet :: WWW/HTTP",
         "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+    ],
+    python_requires=">=3.6",
+    install_requires=[
+        "Django>=2.2,<4.0"
     ],
 )

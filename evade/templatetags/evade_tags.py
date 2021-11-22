@@ -2,7 +2,7 @@ from django import template
 from django.template.defaultfilters import stringfilter
 from django.utils.safestring import mark_safe
 
-from ..utils.evade import evade
+from ..evade import evade
 
 register = template.Library()
 
