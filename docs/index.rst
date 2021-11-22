@@ -4,7 +4,7 @@
 Django Evade
 ************
 
-|PyPI version|_ |Build status|_
+|PyPI version|_ |Build status|_ |Documentation status|_
 
 .. |PyPI version| image::
    https://badge.fury.io/py/django-evade.svg
@@ -13,6 +13,10 @@ Django Evade
 .. |Build status| image::
    https://github.com/richardcornish/django-evade/actions/workflows/main.yml/badge.svg
 .. _Build status: https://github.com/richardcornish/django-evade/actions/workflows/main.yml
+
+.. |Documentation status| image::
+   https://readthedocs.org/projects/django-evade/badge/?version=latest
+.. _Documentation status: https://django-evade.readthedocs.io/en/latest/?badge=latest
 
 **Django Evade** is a `Django <https://www.djangoproject.com/>`_ `template filter <https://docs.djangoproject.com/en/dev/howto/custom-template-tags/>`_ application to pseudo-randomly convert literal HTML characters into equivalent `named <https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references>`_, `numeric, or hexadecimal <https://en.wikipedia.org/wiki/Numeric_character_reference>`_ HTML character entity references.
 
