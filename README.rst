@@ -21,7 +21,7 @@ Useful for obscuring ``mailto`` hyperlinks to prevent spammers from collecting e
 * `Package <https://pypi.org/project/django-evade/>`_
 * `Source <https://github.com/richardcornish/django-evade>`_
 * `Documentation <https://django-evade.readthedocs.io/>`_
-* `Tests <https://app.travis-ci.com/github/richardcornish/django-evade>`_
+* `Tests <https://github.com/richardcornish/django-evade/actions/workflows/main.yml>`_
 
 Install
 =======
