@@ -40,7 +40,7 @@ Add to ``settings.py``.
 
    INSTALLED_APPS = [
        # ...
-       "evade",
+       'evade',
    ]
 
 Usage
