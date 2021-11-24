@@ -5,6 +5,8 @@ from django.test import TestCase
 
 
 class EvadeTestCase(TestCase):
+    """Evade test cases."""
+
     def test_a(self):
         char = "a"
         out = Template("{% load evade_tags %}" "{{ char|evade }}").render(
