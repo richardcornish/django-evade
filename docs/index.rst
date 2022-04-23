@@ -59,7 +59,7 @@ One possible result:
 
 .. code-block:: html
 
-   &#x006D;&#x0065;&commat;&#x65;&#x78;&#x61;&#x6d;&#112;&#x6C;&#x65;&period;&#x63;&#111;&#x6D;
+   &#x006D;&#x065;&commat;&#x65;&#x78;&#x61;&#x6d;&#112;&#x6C;&#x65;&period;&#x63;&#111;&#x6D;
 
 Note the use of named (``&commat;``), decimal (``&#112;``), hexadecimal lowercase (``&#x6d;``), and hexadecimal uppercase (``&#x6C;``) forms, and the varying length of zero fills (``&#x006D;``, ``&#x065;``). Each character entity reference is pseudo-randomized.
 
