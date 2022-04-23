@@ -5,7 +5,7 @@ from setuptools import find_packages, setup
 
 setup(
     name="django-evade",
-    version="0.2.2",
+    version="0.2.3",
     description="A Django template filter to convert HTML literals into named, decimal, or hexadecimal forms",
     long_description=open(
         os.path.join(os.path.dirname(os.path.abspath(__file__)), "README.rst")
