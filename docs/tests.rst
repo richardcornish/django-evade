@@ -13,12 +13,9 @@ However, you can also test the source code.
    (myvenv)$ django-admin test evade.tests --settings="evade.tests.settings"
    Creating test database for alias 'default'...
    System check identified no issues (0 silenced).
-   ...........
+   ...................
    ----------------------------------------------------------------------
-   Ran 11 tests in 0.020s
-   
-   OK
-   Destroying test database for alias 'default'...
+   Ran 19 tests in 3.922s
 
 A bundled settings file allows you to test the code without even creating a Django project.
 

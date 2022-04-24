@@ -8,27 +8,39 @@ HTML
 
 Load the template tag in a template. Run the filter on a literal or a variable.
 
-.. code-block:: django
+Literal examples:
 
-   {% extends "base.html" %}
+.. code-block:: django
 
    {% load evade_tags %}
 
-   {% block content %}
+   <h1>Contact</h1>
 
-       <h1>Contact</h1>
+   <address>{{ "me@example.com"|evade }}</address>
 
-       <p>{{ "me@example.com"|evade }}</p>
+   <address><a href="{{ "mailto:me@example.com"|evade }}">{{ "me@example.com"|evade }}</a></address>
 
-       <p><a href="mailto:{{ "me@example.com"|evade }}">{{ "me@example.com"|evade }}</a></p>
+   <address><a href="{{ "mailto:me@example.com"|evade }}{{ "?subject="|evade }}{{ "Hello, world! How are you?"|urlencode|evade }}">{{ "me@example.com"|evade }}</a></address>
 
-       <p>
-       {% filter evade %}
-       {{ "me@example.com"|evade }}
-       {% endfilter %}
-       </p>
+Variable examples:
 
-   {% endblock %}
+.. code-block:: django
+
+   {% load evade_tags %}
+
+   <h1>Contact</h1>
+
+   {% if user.is_authenticated and user.email %}
+       <address>{{ user.email|evade }}</address>
+   {% endif %}
+
+   {% if user.is_authenticated and user.email %}
+       <address><a href="{{ "mailto:"|evade }}{{ user.email|evade }}">{{ user.email|evade }}</a></address>
+   {% endif %}
+
+   {% if user.is_authenticated and user.email %}
+       <address><a href="{{ "mailto:"|evade }}{{ user.email|evade }}{{ "?subject="|evade }}{{ "Hello, world! How are you?"|urlencode|evade }}">{{ user.email|evade }}</a></address>
+   {% endif %}
 
 Python
 ======
