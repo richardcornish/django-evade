@@ -15,7 +15,7 @@ Django Evade
    https://readthedocs.org/projects/django-evade/badge/?version=latest
 .. _Documentation status: https://django-evade.readthedocs.io/en/latest/?badge=latest
 
-**Django Evade** is a `Django <https://www.djangoproject.com/>`_ `template filter <https://docs.djangoproject.com/en/dev/howto/custom-template-tags/>`_ application to pseudo-randomly convert literal HTML characters into equivalent `named <https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references>`_, `numeric, or hexadecimal <https://en.wikipedia.org/wiki/Numeric_character_reference>`_ HTML character entity references.
+**Django Evade** is a `Django <https://www.djangoproject.com/>`_ `template filter <https://docs.djangoproject.com/en/dev/howto/custom-template-tags/>`_ application to pseudo-randomly convert literal HTML characters into equivalent `named <https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references>`_, `numeric, or hexadecimal <https://en.wikipedia.org/wiki/Numeric_character_reference>`_ HTML character entity references.
 
 Useful for obscuring ``mailto`` hyperlinks to prevent spammers from collecting e-mail addresses. Inspired by a `Django snippet <https://djangosnippets.org/snippets/216/>`_, but rewritten to use the `Format Specification Mini-Language <https://docs.python.org/3/library/string.html#formatspec>`_. The result is a more severe form of |escape|_, leading to the name "evade."
 
