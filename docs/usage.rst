@@ -20,7 +20,7 @@ Literal examples:
 
    <address><a href="{{ "mailto:me@example.com"|evade }}">{{ "me@example.com"|evade }}</a></address>
 
-   <address><a href="{{ "mailto:me@example.com"|evade }}{{ "?subject="|evade }}{{ "Hello, world! How are you?"|urlencode|evade }}">{{ "me@example.com"|evade }}</a></address>
+   <address><a href="{{ "mailto:me@example.com?subject="|evade }}{{ "Hello, world! How are you?"|urlencode|evade }}">{{ "me@example.com"|evade }}</a></address>
 
 Variable examples:
 
