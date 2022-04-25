@@ -8,7 +8,8 @@ HTML
 
 Load the template tag in a template. Run the filter on a literal or a variable.
 
-Literal examples:
+Literal examples
+----------------
 
 .. code-block:: django
 
@@ -22,7 +23,8 @@ Literal examples:
 
    <address><a href="{{ "mailto:me@example.com?subject="|evade }}{{ "Hello, world! How are you?"|urlencode|evade }}">{{ "me@example.com"|evade }}</a></address>
 
-Variable examples:
+Variable examples
+-----------------
 
 .. code-block:: django
 
